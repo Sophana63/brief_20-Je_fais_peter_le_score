@@ -35,3 +35,31 @@ print('CatBoost Accuracy:', clf.score(x_test, y_test))
 print('---------------------')
 print('RMSE: {:.2f}'.format(rmse))
 print('R2: {:.2f}'.format(r2))
+
+# import matplotlib.pyplot as plt
+
+# iterations = [100, 200, 300, 400, 500, 600]
+# accuracies = []
+
+# for iteration in iterations:
+#     clf = CatBoostClassifier(
+#         iterations=iteration,
+#         depth =10,
+#         custom_loss=['AUC', 'Accuracy']
+#     )
+
+#     clf.fit(
+#         x_train, y_train,
+#         eval_set=(x_test, y_test),
+#         verbose=False
+#     )
+
+#     acc = clf.score(x_test, y_test)
+#     accuracies.append(acc)
+
+# plt.plot(iterations, accuracies, 'ro-')
+# plt.xlabel('Iterations')
+# plt.ylabel('Accuracy')
+# plt.title('Accuracy vs Iterations')
+# plt.show()
+

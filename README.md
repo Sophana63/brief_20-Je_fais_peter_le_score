@@ -114,8 +114,11 @@ Avec 10% de jeu de validation
 # échantillons de 0.4 secondes
 [CV 3/3] END C=100, class_weight=None, kernel=rbf;, score=0.889 # test 1
 [CV 1/3] END C=150, class_weight=balanced, kernel=rbf;, score=0.896 # test 2 et 3
-
 ```
+### <span style="color:#9932CC">Plot avec 20% de validation et 0.2s temps signal</span>
+![](img/plot_grid_search_cv.png)
+
+<br><hr>
 
 ## <span style="color: #FF7F50">En utilisant MLPClassifier<span>
 
@@ -153,6 +156,10 @@ Score sur les données de test: 0.874 # test 3
     Le meilleur score trouvé est sur le jeu de validation le plus petit, 10%. La durée des signaux n'a pas vraiment d'impact.
 
 Ouvrir le fichier python : [mlp.py](mlp.py)
+
+### <span style="color:#9932CC">Plot en fonction des activations</span>
+
+![](img/plot_mlp.png)
 
 <br><hr>
 
@@ -239,7 +246,10 @@ RMSE: 0.29
 R2: 0.66
 ```
 
-Ouvrir le fichier python : [catboost_clf.py](catboost_clf.py)
+![](img/catboost.png)
+
+Cette image est intéractive, pour la visualiser il faudra lancer le fichier suivant : [catboost_plot.ipynb](catboost_plot.ipynb).  
+**L'image s'affiche seulement avec un fichier Notebook Jupyter**
 
 <br><hr>
 
