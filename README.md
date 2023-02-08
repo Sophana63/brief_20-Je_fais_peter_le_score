@@ -159,7 +159,7 @@ Ouvrir le fichier python : [mlp.py](mlp.py)
 
 ### <span style="color:#9932CC">Essayons de trouver les meilleurs paramètres possible</span>
 
-Pour y remédier, je vérifie toutes les activations dans un graphique matplotlib avec des itérations compris entre 100 et 600.
+Pour y remédier, je vérifie toutes les activations dans un graphique matplotlib avec des itérations compris entre 100 et 600. Je vais utiliser le jeu de données de base, ce qui veut dire 20% de validation et 0.2 secondes de signal audio.
 
 
 ![](img/plot_mlp.png)
