@@ -157,9 +157,30 @@ Score sur les données de test: 0.874 # test 3
 
 Ouvrir le fichier python : [mlp.py](mlp.py)
 
-### <span style="color:#9932CC">Plot en fonction des activations</span>
+### <span style="color:#9932CC">Essayons de trouver les meilleurs paramètres possible</span>
+
+Pour y remédier, je vérifie toutes les activations dans un graphique matplotlib avec des itérations compris entre 100 et 600.
+
 
 ![](img/plot_mlp.png)
+
+On peux remarquer dans le graphique ci-dessus que le paramètre activation 'tanh' et les itérations entre 500 et 600 donnent les meilleurs résultats.
+
+Je vais donc tester avec ces nouveaux paramètres en fonction des solvers. Voilà ce que donne le graphique :
+
+![](img/plot_mlp_by_solver.png)
+
+Nous avons tous les meilleurs paramètres à disposition:
+- activation: tanh
+- solver: adam
+- itération: 600, 650 ou 700
+
+En exécutant le modèle avec les nouveaux paramètres, j'obtiens le résultat suivant:
+
+``` python
+# 20% validation & 0.2 secondes
+Score sur les données de test: 0.939 
+```
 
 <br><hr>
 
